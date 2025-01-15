@@ -10,6 +10,9 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, header, nav, main, footer {
     padding: 0;
 }
 
+/* body{
+    background-color: black;
+} */
 nav{
     padding: 10px 60px;
     display: flex;
