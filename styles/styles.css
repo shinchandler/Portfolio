@@ -1,0 +1,39 @@
+/*For resetting styles(provided by browser) at global level*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*For resetting styles(provided by browser) of the commonly styled elemets*/
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, header, nav, main, footer {
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-logo{
+    height:40px;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    align-items: center;
+}
+aside{
+    margin-top: 400px;
+}
+.social-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 160px;
+}
+.social-icons{
+    height: 40px;
+    padding-bottom: 10px;
+}
