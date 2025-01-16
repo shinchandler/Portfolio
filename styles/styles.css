@@ -27,10 +27,9 @@ nav{
     gap: 80px;
     align-items: center;
 }
-aside{
-    margin-top: 400px;
-}
+
 .social-wrapper{
+    margin-top: 400px;
     display: flex;
     flex-direction: column;
     align-items:center;
