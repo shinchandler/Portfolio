@@ -28,14 +28,19 @@ nav{
     align-items: center;
 }
 
-.social-wrapper{
+.vertical-social-wrapper{
     margin-top: 400px;
     display: flex;
     flex-direction: column;
     align-items:center;
     width: 160px;
+    height: 100vh;
+    position:fixed
 }
 .social-icons{
     height: 40px;
     padding-bottom: 12px;
+}
+.content{
+    margin-left: 150px;
 }
