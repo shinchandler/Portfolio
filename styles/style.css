@@ -9,12 +9,16 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, header, nav, main, footer {
     margin: 0;
     padding: 0;
 }
-
-/* body{
-    background-color: black;
-} */
+body{
+    margin-top: 100px;
+}
 nav{
+    top: 0;
     padding: 10px 60px;
+    width: 100%;
+    position: fixed;
+    background-color:rgb(243, 228, 249);
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -30,6 +34,7 @@ nav{
 
 .vertical-social-wrapper{
     margin-top: 400px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items:center;
