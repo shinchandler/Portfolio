@@ -50,10 +50,21 @@ nav{
     height: 40px;
     padding-bottom: 12px;
 }
-.content{
-    margin-left: 150px;
-    padding-right: 60px;
+h1{
+    font-size: 120px;
 }
+.hero-section, .second-section, .third-section, .fourth-section {
+    margin-left: 150px;
+    padding: 20px 60px 20px 0px;
+}
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-section-content{
+    margin-left: 150px;
+}
+
 p{
     text-align: justify;
 }
