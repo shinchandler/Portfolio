@@ -60,6 +60,7 @@ h1{
 .hero-section{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .hero-section-content{
     margin-left: 150px;
