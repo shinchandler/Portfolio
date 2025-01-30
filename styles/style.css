@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Header */
 header {
     position: sticky;
     top: 0;
@@ -18,7 +19,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #56565ca6;
+    background-color: #000000a6;
     backdrop-filter: blur(10px);
     color: white;
     /* backdrop-filter: blur(10px); */
@@ -38,6 +39,7 @@ nav {
     align-items: center;
 }
 
+/* Sidebar       */
 .vertical-social-wrapper {
     margin-top: 400px;
     margin-bottom: 10px;
@@ -46,7 +48,8 @@ nav {
     align-items: center;
     width: 160px;
     height: 100vh;
-    position: fixed
+    position: fixed;
+
 }
 
 .social-icons {
@@ -56,14 +59,6 @@ nav {
 
 h1 {
     font-size: 120px;
-}
-
-.hero-section,
-.second-section,
-.third-section,
-.fourth-section {
-    margin-left: 150px;
-    padding: 20px 60px 20px 0px;
 }
 
 .hero-section {
@@ -76,6 +71,38 @@ h1 {
     margin-left: 150px;
 }
 
+/* main content */
+.hero-section,
+.second-section,
+.third-section,
+.fourth-section,
+footer {
+    margin-left: 150px;
+    padding: 20px 60px 20px 0px;
+}
+
 p {
     text-align: justify;
+}
+
+/* footer */
+footer{
+    background-color: white;
+    color: black;
+    border-top: 1px dotted grey;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+hr {
+    height: 1px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
 }
