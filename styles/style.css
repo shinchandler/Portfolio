@@ -12,7 +12,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #bea17f;
+    background-color: #1e1e1e;
     color: white;
     position: fixed;
     top: 0px;
@@ -31,7 +31,7 @@ nav {
     gap: 80px;
 }
 
-/* Sidebar       */
+/* Sidebar */
 .vertical-social-wrapper {
     display: flex;
     flex-direction: column;
@@ -59,9 +59,7 @@ h1 {
     align-items: flex-start;
 }
 
-.hero-section-heading{
-   
-}
+.hero-section-heading {}
 
 .hero-section-content {
     margin-left: 100px;
