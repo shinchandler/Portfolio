@@ -3,12 +3,155 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Header */
+header {
+    height: 80px;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    font-size: 18px;
+}
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.header_logo {
+    height: 50px;
+    width: 50px;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* main content */
+.hero_section {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 100px;
+}
 
+.hero_section_heading {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    margin-right: 50px;
+}
+
+.hero_section_title {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-top: 10px;
+}
+
+.signup_btn {
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: #3882F6;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero_section_image {
+    height: 200px;
+    width: 400px;
+}
+
+.random_info_heading {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.random_info_content {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.random_info_content_layout {
+    width: 200px;
+}
+
+.image_box {
+    height: 200px;
+    width: 200px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+}
+
+.image_subtext {
+    text-align: center;
+}
+
+.quote_section {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    padding: 50px 200px;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.written_by {
+    text-align: right;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.cta_section {
+    padding: 50px 100px;
+}
+
+.cta_container {
+    padding: 20px 50px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.cta_text_heading {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.cta_button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: 900;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0px 20px;
+}
 
 /* footer */
+footer {
+    height: 60px;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    text-align: center;
+    padding: 25px 0px;
+}
