@@ -6,9 +6,20 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+header,
+footer {
+    padding: 20px 250px;
+}
+
+.hero_section,
+.random_info_section,
+.quote_section,
+.cta_section {
+    padding: 60px 250px;
+}
+
 /* Header */
 header {
-    height: 80px;
     background-color: #1F2937;
     color: #E5E7EB;
     font-size: 18px;
@@ -16,20 +27,20 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
 }
 
 .header_logo {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 .nav_menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
 }
 
 /* main content */
@@ -38,14 +49,14 @@ nav {
     color: #E5E7EB;
     display: flex;
     justify-content: space-around;
-    padding: 50px 100px;
+    gap: 150px;
 }
 
 .hero_section_heading {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
-    margin-right: 50px;
+    width: 400px;
 }
 
 .hero_section_title {
@@ -73,13 +84,11 @@ nav {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
-    margin-top: 20px;
     text-align: center;
 }
 
 .random_info_content {
     margin-top: 20px;
-    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +113,6 @@ nav {
 .quote_section {
     background-color: #E5E7EB;
     color: #1F2937;
-    padding: 50px 200px;
 }
 
 .quote {
@@ -120,17 +128,13 @@ nav {
     font-weight: 900;
 }
 
-.cta_section {
-    padding: 50px 100px;
-}
-
 .cta_container {
-    padding: 20px 50px;
     background-color: #3882F6;
     color: #E5E7EB;
     display: flex;
     justify-content: space-between;
     border-radius: 8px;
+    padding: 50px 100px;
 }
 
 .cta_text_heading {
@@ -153,5 +157,4 @@ footer {
     background-color: #1F2937;
     color: #F9FAF8;
     text-align: center;
-    padding: 25px 0px;
 }
