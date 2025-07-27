@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pranav - Product Manager Portfolio</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+      :root {
+        --primary-color: #121212;
+        --background-color: #ffffff;
+        --secondary-text: #5e5e5e;
+        --accent-color: #3b82f6;
+        --soft-grey: #d1d5db;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: var(--background-color);
+        color: var(--primary-color);
+      }
+      .nav-link {
+        @apply text-sm font-medium text-[var(--secondary-text)] hover:text-[var(--accent-color)] transition-colors duration-300;
+      }
+      .section-title {
+        @apply text-3xl font-bold tracking-tight text-gray-900;
+      }
+      .icon-card {
+        @apply flex flex-col items-center justify-center gap-4 p-6 bg-white rounded-xl border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 hover:border-[var(--accent-color)];
+      }
+    </style>
+  </head>
+  <body class="bg-white text-[var(--primary-color)]">
+    <div
+      class="relative flex size-full min-h-screen flex-col overflow-x-hidden"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md">
+          <div class="container mx-auto px-6 lg:px-8">
+            <div class="flex h-20 items-center justify-between">
+              <a class="flex items-center gap-2" href="#">
+                <div class="size-6 text-black">
+                  <svg
+                    fill="none"
+                    viewBox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-xl font-bold text-gray-900">Pranav</span>
+              </a>
+              <nav class="hidden md:flex items-center gap-8">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#tools">Tools</a>
+                <a class="nav-link" href="#contact">Contact</a>
+              </nav>
+              <div class="flex items-center gap-4">
+                <a
+                  class="hidden sm:inline-flex items-center justify-center rounded-lg h-10 bg-[var(--primary-color)] text-white gap-2 text-sm font-bold leading-normal tracking-wide min-w-0 px-6 transform hover:bg-[var(--accent-color)] transition-colors duration-300 rounded-md"
+                  href="#contact"
+                >
+                  Let's Connect
+                </a>
+                <button
+                  class="md:hidden flex items-center justify-center size-10 rounded-md bg-gray-100 hover:bg-gray-200 transition-colors"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="24"
+                    viewBox="0 0 256 256"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="flex-1">
+          <section
+            class="relative h-[85vh] flex items-center justify-center text-center text-white"
+          >
+            <div class="absolute inset-0 bg-[var(--primary-color)]">
+              <img
+                alt="Background Image"
+                class="w-full h-full object-cover opacity-20"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZLa3Lh8Upz9q9FxWyawZPOtZhd3AeML4oqPI8gk50vECZRdqs0Cbf2ozRNO0rUZ4WC1QwR0fF4BCheUh-qc2WbC8XneGpzSv1R1UBQIVA-zWWrgxg6RE_6anqs9CrM-pXza2VeAMk71TkGPi902VtGjWe0M6MqcoehgvvBhWRJV0_4W2QQ0qQ2u-7ykMAAu0HuQ5L3Oc4uyN4LI4qJ8eW-UcQ1hwP5W3YG5wEs8cQOgQSYQtD55figyIFXO-e_PaneQ4afntVf44"
+              />
+            </div>
+            <div class="relative z-10 container mx-auto px-6 lg:px-8 max-w-4xl">
+              <h1
+                class="text-5xl md:text-7xl font-extrabold leading-tight tracking-tighter mb-4 animate-fade-in-down"
+              >
+                Hi, I’m Pranav — I build meaningful products with people in
+                mind.
+              </h1>
+              <p
+                class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto animate-fade-in-up"
+              >
+                Driven by impact. Obsessed with the ‘why.’ Building with teams,
+                for people.
+              </p>
+            </div>
+          </section>
+          <section class="py-24 sm:py-32 bg-white" id="about">
+            <div
+              class="container mx-auto px-6 lg:px-8 grid md:grid-cols-5 gap-12 items-center"
+            >
+              <div class="md:col-span-2">
+                <div
+                  class="aspect-square rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500"
+                >
+                  <img
+                    alt="Pranav"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr2x9_mDdSSYnJhqzB0MysNEYf8Yl3aehdMY9UwvBiop6Mcz-NKye1S_xw6_LiLRrluSIHlimx6p3uv92hpihhzpfYIav4-kAFjWpTcweeb6lO6UJE_QroiBCT1c53LtJcNfmWHzILErwK5qg1TwFqmGnDJIs7X6zyPNiucSIaPjW0FcoUl0aqRSssl0w5SD5TlIOmizQXu3pv2qnfW8MTOilZwOMBB_T2Nly2-IyJGR7-UzMif0cNHlrDVhA05swn7-ylmZ0UwNo"
+                  />
+                </div>
+              </div>
+              <div class="md:col-span-3">
+                <h2 class="section-title mb-6">A Bit About Me</h2>
+                <p
+                  class="text-lg text-[var(--secondary-text)] leading-relaxed mb-4"
+                >
+                  I'm a project coordinator transitioning into product
+                  management, passionate about solving user problems and
+                  creating impactful products.
+                </p>
+                <p class="text-lg text-[var(--secondary-text)] leading-relaxed">
+                  I believe that
+                  <span class="font-bold text-[var(--primary-color)]"
+                    >"Product is King"</span
+                  >
+                  and strive to build solutions that not only meet user needs
+                  but also deliver delightful experiences. My goal is to bridge
+                  the gap between user desires and business objectives, creating
+                  products that truly resonate.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="py-24 sm:py-32 bg-[#F9FAFB]" id="projects">
+            <div class="container mx-auto px-6 lg:px-8">
+              <div class="text-center mb-16">
+                <h2 class="section-title">My Projects</h2>
+                <p class="mt-4 text-lg text-[var(--secondary-text)]">
+                  A few things I've built to practice my skills.
+                </p>
+              </div>
+              <div class="grid md:grid-cols-3 gap-8">
+                <div
+                  class="group relative overflow-hidden rounded-xl shadow-lg bg-white p-6 flex flex-col justify-between"
+                >
+                  <div>
+                    <img
+                      class="w-full h-48 object-cover rounded-md mb-4 transform group-hover:scale-105 transition-transform duration-500"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWhx4Gxcd3wsTrCfk5VLHXycoUiidSHUpvijV5Lj9n0KdLsZQf3Jq_FZ7AuqjExFEGVjj5SZSat0sJBJPneqw50Hnf_nj7B4ykm-5BXwf6m6_vOZtnhjav3n0ts-KLg8DmmY0rvstbHr9fs0sq8YXlcVxX9Q6cFbmAigEwMtM7dYLJmRSzhHXfMPPqS2zPG5WefUHEM0VMf--vkntyzOBJBphvsicK-RuCEUwJTbYnnZgsoJRxKUNCwE9iCbxixoAENynK3qqAe8c"
+                    />
+                    <h3 class="text-xl font-bold text-gray-900">
+                      Stone Paper Scissors
+                    </h3>
+                    <p class="text-[var(--secondary-text)] mt-2 text-sm">
+                      A classic game built to explore UI interactions and state
+                      management.
+                    </p>
+                  </div>
+                  <a
+                    class="mt-6 inline-flex items-center justify-center rounded-md bg-[var(--accent-color)]/10 text-[var(--accent-color)] px-5 py-2.5 text-base font-semibold hover:bg-[var(--accent-color)]/20 transition-colors"
+                    href="#"
+                    >View Project</a
+                  >
+                </div>
+                <div
+                  class="group relative overflow-hidden rounded-xl shadow-lg bg-white p-6 flex flex-col justify-between"
+                >
+                  <div>
+                    <img
+                      class="w-full h-48 object-cover rounded-md mb-4 transform group-hover:scale-105 transition-transform duration-500"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS5nCj8Lb1eR3RsCCCSxXZuGPyd655rr1SGG0k_KwlUK2qzMVvxPKd2GGXwuL6AHpcwFls5KY7qruILMQfh4AiIeBRuBq3Aw8nnBoXpR5E0HGHDT3zS54JY4t5zbHlIzrVYkPwiv63DED2C1uBz423E1ujY6M-SdXcWy8vrPWUkuCnv8uw3pPbLy5SViiCEKQ4PLf72Ly1mfdzSvb7yl_5A_yWP3P_qWIO-lOqHa4el0XT3sumzwFSLfr8e2IEk9z4zotpOL9waeU"
+                    />
+                    <h3 class="text-xl font-bold text-gray-900">Tic Tac Toe</h3>
+                    <p class="text-[var(--secondary-text)] mt-2 text-sm">
+                      A web-based version of the timeless two-player strategy
+                      game.
+                    </p>
+                  </div>
+                  <a
+                    class="mt-6 inline-flex items-center justify-center rounded-md bg-[var(--accent-color)]/10 text-[var(--accent-color)] px-5 py-2.5 text-base font-semibold hover:bg-[var(--accent-color)]/20 transition-colors"
+                    href="#"
+                    >View Project</a
+                  >
+                </div>
+                <div
+                  class="group relative overflow-hidden rounded-xl shadow-lg bg-white p-6 flex flex-col justify-between"
+                >
+                  <div>
+                    <img
+                      class="w-full h-48 object-cover rounded-md mb-4 transform group-hover:scale-105 transition-transform duration-500"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMMxfK6hsFjPIWx0qExf7hJ_5o2bgRm13xAr-KxTpdLHLpbyY0zGKcVh1f5OVSPS8EjXbqeuoejrxNJbtklhH7j4xRiR7SxVZhtxy5PP7aG_Mv7k9DF8_H1dwx8E7Zid900kxLFyG2U9SBOu20_oHohS8tDQ66am-uMTyaWzKPo8v1VXps2KkmMiceNIel1ywo9S4q7dh-mflzqQ7Z38SIiWdQC8i8UKQDAMPhKQVVx1usw7aSn1eAhtaNbgIWrl0HJUvnPPEFV2k"
+                    />
+                    <h3 class="text-xl font-bold text-gray-900">Calculator</h3>
+                    <p class="text-[var(--secondary-text)] mt-2 text-sm">
+                      A functional digital calculator with a clean and intuitive
+                      interface.
+                    </p>
+                  </div>
+                  <a
+                    class="mt-6 inline-flex items-center justify-center rounded-md bg-[var(--accent-color)]/10 text-[var(--accent-color)] px-5 py-2.5 text-base font-semibold hover:bg-[var(--accent-color)]/20 transition-colors"
+                    href="#"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="py-24 sm:py-32 bg-white" id="tools">
+            <div class="container mx-auto px-6 lg:px-8">
+              <div class="text-center mb-16">
+                <h2 class="section-title">My Toolkit</h2>
+                <p class="mt-4 text-lg text-[var(--secondary-text)]">
+                  The tools and technologies I use to bring ideas to life.
+                </p>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-8 text-center">
+                Collaboration, Design &amp; AI
+              </h3>
+              <div
+                class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-16"
+              >
+                <div class="icon-card">
+                  <img
+                    alt="Figma"
+                    class="h-16 w-16"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsK77EnWnt26OgQRGHhX1mzBeKz5uyRhHexNrKAYjRLbTBporDOV3NSryYzNtd4LDKmB77VLro6yJe1uBo_Yt9kN90vKQc0qw9mZGUiatIayTlmriS6QJjRtu1qGkAttru2nZ2ppmEjQGkzBEmHyWEPNOSmODrPGFg79ehxL1hCgcuFHgHsiXZZQ_jG_NyxnXohViV7a8rkPsXCQ5HuJ-ziIcKiFrFURfafkxOfIQ1ChGLSuR8Z6kPH69X8SudbqmVFiZvYs-mPwM"
+                  />
+                  <p class="font-semibold">Figma</p>
+                </div>
+                <div class="icon-card">
+                  <img
+                    alt="Slack"
+                    class="h-16 w-16"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa1AAFZHYjuq8qmdab0tMa243-JihI5m56Ij8ScZyF6uC2XSNtfEt8WnGRrP1uy_8nkeJP5pMm88vhfuj0YDwQLbO4b-loUfVqIxVfvthokneUTUFYmLjFqRCITGOLDnefcRqdrkAG8QZ5SakMKuKDN5cNi_ikc1hjQcc-Yde0kEndw1ciqo68m-ie49-b3ePJ04mbWaEYICxmle4ZnncIQypXQq5HcqbfpHxkVqB0JnYU_rW2OkciJQq3_nngSoTZUcTWVbYQSUY"
+                  />
+                  <p class="font-semibold">Slack</p>
+                </div>
+                <div class="icon-card">
+                  <img
+                    alt="Notion"
+                    class="h-16 w-16"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3N7VhQz1V9oaFo8wyb81iW4zSy4Q7AzSPCzMbmt7WGDCh8qSyQfsmbzHLUDU0cdzsvZ71zImqKyngg5btjQEVuhbBq2InVC3PgpFAGAX5SgsZR8FzDfWtqHomW97cC22bPcTmJSQdiXjBREwJP-VVDhsZqUtiOHfeAXt17XVXE5AbxPeZ3MB-02zngGTdeCXdEGSpyA27B_cMtdaK4ms6kYA1bBP7I3H62tcpA7PDMMRi_bnI3YUpy3KvPjXZh3tm8S0axgH9HiE"
+                  />
+                  <p class="font-semibold">Notion</p>
+                </div>
+                <div class="icon-card">
+                  <img
+                    alt="Miro"
+                    class="h-16 w-16"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVncYx5qN7_1MjX5o2NjkkMwfe_X8gaDd5kKvXfXn-wnOgbiumCv3xCQR--CTHD4LqEXjp4btKZzuWUb-UhTsSnEpwd2hl1K5t5PXN8-my6-a98uIss-6s1bFHvtzUzoOCKb-NHbPrd1arn5gAZBuxQbiluFKXMoyzX_fAudlP0Xyny0DD4x1maqNXk67DwzBYapDH54cYpxoGTjRhKNUhgTgpr68rIwAr6keMuoEfICnxcn_ZksPqFOUvz1i3EKUzGR2G_ImRy0o"
+                  />
+                  <p class="font-semibold">Miro</p>
+                </div>
+                <div class="icon-card">
+                  <img
+                    alt="ChatGPT"
+                    class="h-16 w-16"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6ezBuiKu3yHwmYZ_Ar_z3q-0kjxSdM6zNEIFq95UYaZ8fWLDMbWtMh5j1TdhKvt81prIHOMn01nMaNC9dBuGfhOlfuNGC_p4R1Tztd1D3Yqe82xtoEATMPci6O2gQmQzB0DgunBmVBvwAgWiHy459PGM-ypkOPQbemZZ0nrDmRH3NbalU0hdbojAihIlk4ZYXOdaq6ZuGAkI56kHONgflOAk-iaEjN7Max0_WTR-pwesUzDmbUBlLBnkKEALo5j-mQ5XZjJDVrI0"
+                  />
+                  <p class="font-semibold">ChatGPT</p>
+                </div>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-8 text-center">
+                Development Stack
+              </h3>
+              <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                <div class="icon-card">
+                  <img
+                    alt="React"
+                    class="h-16 w-16"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU5AmcwZJTI36lwFTcXQGs9iTb6lYZX6FkrfzlEDqO-DVN9iGSyZ-Ovj4e5uhxpTokE1nFHoScy-lkSn1NijQTbP31-uXWWfe85RZuIWLKHPV50TCzl2bJLKBY1RXLBdxaKcdzu5OaCXqWmRceaT7on6hjuavA69TfBsqzC9qRq3BqQqEY5X6ZbW2a8Li-fGuvh4fJcCOT6nVSR2A2OnGRLA7zOt65647ZJYBR3icapPsT2D41j53GcyAzfJ6prGsmYG-q-hZpHsY"
+                  />
+                  <p class="font-semibold">React</p>
+                </div>
+                <div class="icon-card">
+                  <img
+                    alt="JavaScript"
+                    class="h-16 w-16"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyKxDR5VIDAp54HR-XKL5jTAAO8oKb4iBTEgJ6ha3fmWzF2HLmU6iRxVWBku_6xCRStvhfzDBS8-Kn2gwQQiekJ0pVHmI9ABx5BWyKUJbaNvBqvU6cHfQjNTQyE04bBNjuC-QMNTwSUPZWh5qlEhHIoP2GZWaywPDLUECM7CRE64I_9duvZ7n-i6xJSV8gLMkSBJG_J5kyU9S0NHl68ibbxRFx5pulQjYKnZuR36NS-X75GMUQR5L8p97ecj9Xub1BJZKqXKq7cWo"
+                  />
+                  <p class="font-semibold">JavaScript</p>
+                </div>
+                <div class="icon-card">
+                  <img
+                    alt="HTML"
+                    class="h-16 w-16"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNXWYQklU0M8ZGVwbZarY3WHu7NTZz3JtTC6qQpBVTVQiI6Cymb4gHzXTbgI4e0OOcE1XBQnao2RNhlEa-TLPV8FHtgmb1X7IEf_IWWpXtdLHfeWvTMouaE-OiaW_TPBxr26hMfo-1Kufk4H8sbxpspq1o7fsyY28zhNAJbSwx09BiqWICD_smp-QfVIfPc-wBja7U5BQ1hfzmfmWPiz4vSwi-y40jQIwztT0UvnjSUnQv_IfkHsSt6GpZ0B76VvAuIhE910c3qgM"
+                  />
+                  <p class="font-semibold">HTML5</p>
+                </div>
+                <div class="icon-card">
+                  <img
+                    alt="CSS"
+                    class="h-16 w-16"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHV9SRrz11yGj4es_xj4bCCVmslc9l_PardAnCnRIpgyPVYxuXEJZ7Ylj8g6tYKnGUo-ea5wTm6kVFBIhyaRbiJpmSuweShk_mIpagxCrN_Ly45IqVGp2hxr9H6a7Eas2pvsL6JXJcLAiM7XQ4O5oz4T2_HQzCHjTthRAYfnbSH1cQgDHliDqiqT59NSpQ2NBgS9ssHFPugKnV9wDYLywh6xBXNxAydUkvQ1LFmch2CesazDvCcWmAJB1TtkTG8Og1qpUZphf4EdU"
+                  />
+                  <p class="font-semibold">CSS3</p>
+                </div>
+                <div
+                  class="icon-card filter grayscale opacity-60 !border-[var(--soft-grey)] hover:grayscale-0 hover:opacity-100 hover:border-[var(--accent-color)]"
+                >
+                  <img
+                    alt="Node.js"
+                    class="h-16 w-16"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWpj76HAqkJ3gIp7zGGBwU5xpwKBvVtKmHZOC5klorFdeMfQGjWLqlVDKyJmCbUrxorvsO1AjLm1_zUNQ7K7BAryme0pwcgeuSKV8api02TbGY0uv7QyGs3kv6tuW77_Nffxyn3EXRSJYbfOrnRohYmOdzfwiXyjbcswHarUwXZ-3yl8MmX-258YXEqrSPfbrtwiOVRq4CPwhv_I8-H6RmpX0EVXpahBGkxkqFBFkg3QEM0IE1DbPU0Z5xUN49HH6lZXplYYhRlEg"
+                  />
+                  <p class="font-semibold">Node.js (Learning)</p>
+                </div>
+                <div
+                  class="icon-card filter grayscale opacity-60 !border-[var(--soft-grey)] hover:grayscale-0 hover:opacity-100 hover:border-[var(--accent-color)]"
+                >
+                  <img
+                    alt="MongoDB"
+                    class="h-16 w-16"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR2QKwBfdIXFa5g-KJedLAmkPqNRn_F10CLpe7Uhxpf_HGuowl5Zmr8azFtRYaZsYQ9KCYmLUNX_BSkwW33mYt_7IiL9raRxCb2NgQxjW8D2OvX82B--jNW95QBm-cDQhZP1Ms9sifqnfRTbSQlQD1v0yoXMaUOYftGwELV5DrdaXsYuZQro9N9CKGJ0jfj3GK5RfhSmkrkqzYaJfSG5lTbCEturaFs0blczHPdnx7wrGa05mwCrQNRaJmcN2hSqVocKEgSYgd_mk"
+                  />
+                  <p class="font-semibold">MongoDB (Learning)</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="py-24 sm:py-32 bg-[#F9FAFB]" id="contact">
+            <div class="container mx-auto px-6 lg:px-8 text-center">
+              <h2 class="section-title">Get In Touch</h2>
+              <p
+                class="mt-4 text-lg text-[var(--secondary-text)] max-w-2xl mx-auto"
+              >
+                I'm always open to discussing new products, projects, or
+                opportunities. Let's connect!
+              </p>
+              <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <a class="icon-card" href="#">
+                  <div
+                    class="text-[var(--primary-color)] size-10 hover:text-[var(--accent-color)]"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      viewBox="0 0 256 256"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-lg font-bold">Gmail</h3>
+                </a>
+                <a class="icon-card" href="#">
+                  <div
+                    class="text-[var(--primary-color)] size-10 hover:text-[var(--accent-color)]"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      viewBox="0 0 256 256"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-lg font-bold">WhatsApp</h3>
+                </a>
+                <a class="icon-card" href="#">
+                  <div
+                    class="text-[var(--primary-color)] size-10 hover:text-[var(--accent-color)]"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      viewBox="0 0 256 256"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-lg font-bold">Calendly</h3>
+                </a>
+                <a class="icon-card" href="#">
+                  <div
+                    class="text-[var(--primary-color)] size-10 hover:text-[var(--accent-color)]"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      viewBox="0 0 256 256"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-lg font-bold">LinkedIn</h3>
+                </a>
+              </div>
+              <div class="mt-20 flex justify-center gap-6">
+                <a
+                  class="text-gray-500 hover:text-[var(--accent-color)] transition-colors transform hover:scale-110"
+                  href="#"
+                  ><svg
+                    class="size-8"
+                    fill="currentColor"
+                    height="1em"
+                    viewBox="0 0 256 256"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+                    ></path>
+                  </svg>
+                  ></a
+                >
+                <a
+                  class="text-gray-500 hover:text-[var(--accent-color)] transition-colors transform hover:scale-110"
+                  href="#"
+                  ><svg
+                    class="size-8"
+                    fill="currentColor"
+                    height="1em"
+                    viewBox="0 0 256 256"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                    ></path>
+                  </svg>
+                  ></a
+                >
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="bg-[var(--primary-color)] text-white">
+          <div class="container mx-auto px-6 lg:px-8 py-8 text-center">
+            <p class="text-gray-400">Made with keyboard chaos &amp; coffee.</p>
+            <p class="text-sm text-gray-500 mt-2">
+              © 2024 Pranav. All Rights Reserved.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
