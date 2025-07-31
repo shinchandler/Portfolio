@@ -239,8 +239,8 @@ nav .cta_button {
 .tools_section .tools_1 .slider_track {
     display: flex;
     width: max-content;
-    gap: 50px;
-    animation: scroll-left 20s linear infinite;
+    gap: 80px;
+    animation: scroll-left 25s linear infinite;
 }
 @keyframes scroll-left {
   0% {
@@ -253,8 +253,8 @@ nav .cta_button {
 .tools_section .tools_2 .slider_track {
     display: flex;
     width: max-content;
-    gap: 50px;
-    animation: scroll-right 25s linear infinite;
+    gap: 80px;
+    animation: scroll-right 45s linear infinite;
 }
 @keyframes scroll-right {
   0% {
@@ -265,33 +265,17 @@ nav .cta_button {
   }
 }
 
-.tools_section .tools_1 .card {
-    display: flex;       
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
 
-.tools_section .tools_2 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-
-}
-
-.tools_section .tools_1 .card img {
-    height: 50px;
-    width: 50px;
+.tools_section .tools_1 img {
+    height: 100px;
+    width: 100px;
     border-radius: 8px;
     object-fit: cover;
 }
 
-.tools_section .tools_2 .card img {
-    height: 50px;
-    width: 50px;
+.tools_section .tools_2 img {
+    height: 100px;
+    width: 100px;
     border-radius: 8px;
     object-fit: cover;
 }
