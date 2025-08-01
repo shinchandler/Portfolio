@@ -270,14 +270,14 @@ nav .cta_button {
     height: 100px;
     width: 100px;
     border-radius: 8px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .tools_section .tools_2 img {
     height: 100px;
     width: 100px;
     border-radius: 8px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* contact */
