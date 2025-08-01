@@ -7,25 +7,19 @@
 }
 
 /* nav bar*/
+header{
+    background-color: black;
+    color: white;
+}
 nav {
-    margin: 20px 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px 20px;
 }
 
-nav .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
 
-nav .logo .logo_img {
-    height: 24px;
-}
-
-nav .logo .logo_name {
+nav .logo{
     font-size: 20px;
     font-weight: 700;
 }
@@ -48,8 +42,8 @@ nav .cta_button {
     font-size: 15px;
     font-weight: 600;
     border-radius: 8px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 /* main content */
@@ -309,7 +303,7 @@ nav .cta_button {
     color: grey;
 }
 
-.contact_section .projects_row {
+.contact_section .contact_row {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -342,6 +336,11 @@ nav .cta_button {
     align-items: center;
     gap: 30px;
     margin-top: 50px;
+}
+.work_row img{
+    height: 50px;
+    width: 50px;
+    background-color: none;
 }
 
 /* footer */
