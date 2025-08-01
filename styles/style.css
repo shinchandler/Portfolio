@@ -220,7 +220,13 @@ nav .cta_button {
     text-align: center;
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin: 30px 0px;
+}
+.tools_section .tools_2 .heading {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0px;
 }
 
 .tools_section .tools_1 .tools_slider {
@@ -241,6 +247,7 @@ nav .cta_button {
     width: max-content;
     gap: 80px;
     animation: scroll-left 25s linear infinite;
+    will-change: transform;
 }
 @keyframes scroll-left {
   0% {
@@ -254,7 +261,8 @@ nav .cta_button {
     display: flex;
     width: max-content;
     gap: 80px;
-    animation: scroll-right 45s linear infinite;
+    animation: scroll-right 40.91s linear infinite;
+    will-change: transform;
 }
 @keyframes scroll-right {
   0% {
