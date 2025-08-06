@@ -45,6 +45,7 @@ nav .cta_button {
     border-radius: 8px;
     background-color: white;
     color: black;
+    text-decoration: none;
 }
 
 /* main content */
@@ -271,6 +272,19 @@ nav .cta_button {
     width: 100px;
     border-radius: 8px;
     object-fit: contain;
+    transition: filter 0.3s ease;
+}
+
+.tools_section .tools_1 .learning {
+    filter: grayscale(100%) opacity(0.5);
+}
+
+.tools_section .tools_2 .learning {
+    filter: grayscale(100%) opacity(0.5);
+}
+
+.tools_section .tools_2 .learning:hover {
+    transition: filter 0.3s ease;
 }
 
 /* contact */
@@ -346,7 +360,7 @@ footer {
     gap: 12px;
     color: #969da9;
     text-align: center;
-    border-radius: 50px 50px 0px 0px ;
+    border-radius: 50px 50px 0px 0px;
 
 }
 
