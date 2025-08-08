@@ -34,6 +34,14 @@ nav .nav_menu {
     list-style: none;
 }
 
+nav .nav_menu a {
+
+    color: white;
+    text-decoration: none;
+    /* removes underline */
+
+}
+
 nav .cta_button {
     height: 40px;
     width: 152px;
