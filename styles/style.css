@@ -321,24 +321,26 @@ nav .cta_button {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 .contact_section .card {
-    width: 250px;
+    margin: 30px;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    padding: 22px;
-    border: 1px solid rgb(217, 217, 217);
-    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    /* removes underline */
 }
 
 .contact_section .card img {
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
     border-radius: 8px;
     object-fit: cover;
 }
