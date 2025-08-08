@@ -6,6 +6,11 @@
     font-family: "Inter", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* nav bar*/
 header {
     background-color: black;
@@ -69,7 +74,7 @@ nav .cta_button {
 }
 
 .hero_section .section_heading {
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 800;
     color: white;
     width: 80vw;
@@ -149,9 +154,9 @@ nav .cta_button {
 
 .projects_section .projects_row .card img {
     height: 200px;
-    width: 420px;
+    width: auto;
     border-radius: 8px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .projects_section .projects_row .card .project_name {
@@ -289,10 +294,6 @@ nav .cta_button {
 
 .tools_section .tools_2 .learning {
     filter: grayscale(100%) opacity(0.5);
-}
-
-.tools_section .tools_2 .learning:hover {
-    transition: filter 0.3s ease;
 }
 
 /* contact */
