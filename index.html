@@ -1,356 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-1Z141LPSCL"
-    ></script>
-    <script src="scripts/googleAnalytics.js"></script>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Someone Special ❤️</title>
 
-    <meta charset="UTF-8" />
-    <title>Pranav - Product Manager Portfolio</title>
-    <meta name="description" content="Portfolio website of Pranav Rishi" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Pranav Rishi" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/style.css" />
+<style>
+*{box-sizing:border-box;font-family:Poppins,sans-serif;}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  background:linear-gradient(135deg,#ff758c,#ff7eb3);
+}
 
-    <!-- Microsoft Clarity -->
-    <script src="scripts/microsoftClarity.js"></script>
-  </head>
+/* Floating hearts */
+.heart{
+  position:fixed;
+  bottom:-20px;
+  animation:float 6s linear infinite;
+  opacity:.6;
+}
+@keyframes float{to{transform:translateY(-110vh);}}
 
-  <body>
-    <header>
-      <nav aria-label="Navigation bar">
-        <div class="logo">Pranav</div>
-        <ul class="nav_menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#tools">Tools</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <a href="#contact" class="cta_button">Let's Connect</a>
-      </nav>
-    </header>
-    <main>
-      <section class="hero_section">
-        <div class="section_heading">
-          <h1>
-            Hi, I'm Pranav - I build meaningful products with people in mind.
-          </h1>
-        </div>
-        <div class="section_subheading">
-          Driven by impact. Obsessed with the 'why'. Building with teams, not
-          just code.
-        </div>
-      </section>
-      <section class="about_section" id="about">
-        <img src="assets/images/profileimage.png" alt="Pranav's image" />
-        <div class="content">
-          <div class="section_heading"><h2>A Bit About Me</h2></div>
-          <div class="section_subheading">
-            I'm a project coordinator transitioning into product management,
-            passionate about solving user problems and creating impactful
-            products. <br /><br />
-            I believe that <strong>"Product is King"</strong> and strive to
-            build solutions that not only meet user needs but also deliver
-            delightful experiences. My goal is to bridge the gap between user
-            desires and business objectives, creating products that truly
-            resonate.
-          </div>
-        </div>
-      </section>
-      <section class="projects_section" id="projects">
-        <div class="section_heading"><h2>My Projects</h2></div>
-        <div class="section_subheading">
-          A few things I've built to practice my skills.
-        </div>
-        <div class="projects_row">
-          <div class="card">
-            <img
-              src="assets/images/stone_paper_scissor.png"
-              alt="Stone Paper Scissors"
-            />
-            <div class="project_name">Stone Paper Scissors</div>
-            <div class="project_description">
-              A classic game built to explore UI interactions and state
-              management.
-            </div>
-            <button>View Project</button>
-          </div>
-          <div class="card">
-            <img src="assets/images/tic_tac_toe.png" alt="Tic Tac Toe" />
-            <div class="project_name">Tic Tac Toe</div>
-            <div class="project_description">
-              A web-based version of the timeless two-player strategy game.
-            </div>
-            <button>View Project</button>
-          </div>
-          <div class="card">
-            <img src="assets/images/calculator.png" alt="Calculator" />
-            <div class="project_name">Calculator</div>
-            <div class="project_description">
-              A functional digital calculator with a clean and intuitive
-              interface.
-            </div>
-            <button>View Project</button>
-          </div>
-        </div>
-      </section>
-      <section class="tools_section" id="tools">
-        <div class="section_heading"><h2>My Toolkit</h2></div>
-        <div class="section_subheading">
-          The tools and technologies I use to bring ideas to life.
-        </div>
+/* Card */
+.card{
+  position:relative;
+  backdrop-filter:blur(15px);
+  background:rgba(255,255,255,.25);
+  border-radius:20px;
+  padding:30px;
+  width:340px;
+  text-align:center;
+  box-shadow:0 15px 35px rgba(0,0,0,.2);
+  color:white;
+}
 
-        <!-- Category 1: Workflow, Collaboration & Product Thinking -->
-        <div class="tools_1">
-          <div class="heading">Productivity & Planning Stack</div>
-          <div class="tools_slider">
-            <div class="slider_track">
-              <img
-                src="assets/icons/notion.svg"
-                alt="Notion"
-                class="learning"
-              />
-              <img src="assets/icons/trello.svg" alt="Trello" />
-              <img src="assets/icons/jira.svg" alt="Jira" />
-              <img src="assets/icons/basecamp.svg" alt="Basecamp" />
-              <img src="assets/icons/slack.svg" alt="Slack" />
-              <img src="assets/icons/miro.svg" alt="Miro" />
-              <img src="assets/icons/excalidraw.svg" alt="Excalidraw" />
-              <img src="assets/icons/ga4.svg" alt="Google Analytics" />
-              <img src="assets/icons/chatgpt.svg" alt="ChatGPT" />
+.hidden{display:none;}
 
-              <!-- Repeating for seamless slider loop -->
-              <img
-                src="assets/icons/notion.svg"
-                alt="Notion"
-                class="learning"
-              />
-              <img src="assets/icons/trello.svg" alt="Trello" />
-              <img src="assets/icons/jira.svg" alt="Jira" />
-              <img src="assets/icons/basecamp.svg" alt="Basecamp" />
-              <img src="assets/icons/slack.svg" alt="Slack" />
-              <img src="assets/icons/miro.svg" alt="Miro" />
-              <img src="assets/icons/excalidraw.svg" alt="Excalidraw" />
-              <img src="assets/icons/ga4.svg" alt="Google Analytics" />
-              <img src="assets/icons/chatgpt.svg" alt="ChatGPT" />
-            </div>
-          </div>
-        </div>
+input{
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  width:85%;
+  margin:10px 0;
+}
 
-        <!-- Category 2: Development & DevOps -->
-        <div class="tools_2">
-          <div class="heading">Development & DevOps</div>
-          <div class="tools_slider">
-            <div class="slider_track">
-              <img src="assets/icons/html5.svg" alt="HTML" />
-              <img src="assets/icons/css3.svg" alt="CSS" />
-              <img src="assets/icons/javascript.svg" alt="JavaScript" />
-              <img
-                src="assets/icons/typescript.svg"
-                alt="TypeScript"
-                class="learning"
-              />
-              <img src="assets/icons/react.svg" alt="React" class="learning" />
-              <img
-                src="assets/icons/tailwind.svg"
-                alt="Tailwind CSS"
-                class="learning"
-              />
-              <img
-                src="assets/icons/bootstrap.svg"
-                alt="Bootstrap"
-                class="learning"
-              />
-              <img src="assets/icons/mui.svg" alt="MUI" class="learning" />
-              <img src="assets/icons/github.svg" alt="GitHub" />
-              <img
-                src="assets/icons/nodejs.svg"
-                alt="Node.js"
-                class="learning"
-              />
-              <img
-                src="assets/icons/fastapi.svg"
-                alt="FastAPI"
-                class="learning"
-              />
-              <img
-                src="assets/icons/flutter.svg"
-                alt="Flutter"
-                class="learning"
-              />
-              <img
-                src="assets/icons/postman.svg"
-                alt="Postman"
-                class="learning"
-              />
-              <img src="assets/icons/mysql.svg" alt="MySQL" />
-              <img
-                src="assets/icons/postgresql.svg"
-                alt="PostgreSQL"
-                class="learning"
-              />
-              <img
-                src="assets/icons/mongodb.svg"
-                alt="MongoDB"
-                class="learning"
-              />
-              <img
-                src="assets/icons/supabase.svg"
-                alt="Supabase"
-                class="learning"
-              />
-              <img
-                src="assets/icons/docker.svg"
-                alt="Docker"
-                class="learning"
-              />
-              <img src="assets/icons/aws.svg" alt="AWS" class="learning" />
+button{
+  padding:12px 22px;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  font-size:15px;
+  margin:10px;
+  transition:.25s;
+}
 
-              <!-- Repeating for seamless slider loop -->
-              <img src="assets/icons/html5.svg" alt="HTML" />
-              <img src="assets/icons/css3.svg" alt="CSS" />
-              <img src="assets/icons/javascript.svg" alt="JavaScript" />
-              <img
-                src="assets/icons/typescript.svg"
-                alt="TypeScript"
-                class="learning"
-              />
-              <img src="assets/icons/react.svg" alt="React" class="learning" />
-              <img
-                src="assets/icons/tailwind.svg"
-                alt="Tailwind CSS"
-                class="learning"
-              />
-              <img
-                src="assets/icons/bootstrap.svg"
-                alt="Bootstrap"
-                class="learning"
-              />
-              <img src="assets/icons/mui.svg" alt="MUI" class="learning" />
-              <img src="assets/icons/github.svg" alt="GitHub" />
-              <img
-                src="assets/icons/nodejs.svg"
-                alt="Node.js"
-                class="learning"
-              />
-              <img
-                src="assets/icons/fastapi.svg"
-                alt="FastAPI"
-                class="learning"
-              />
-              <img
-                src="assets/icons/flutter.svg"
-                alt="Flutter"
-                class="learning"
-              />
-              <img
-                src="assets/icons/postman.svg"
-                alt="Postman"
-                class="learning"
-              />
-              <img src="assets/icons/mysql.svg" alt="MySQL" />
-              <img
-                src="assets/icons/postgresql.svg"
-                alt="PostgreSQL"
-                class="learning"
-              />
-              <img
-                src="assets/icons/mongodb.svg"
-                alt="MongoDB"
-                class="learning"
-              />
-              <img
-                src="assets/icons/supabase.svg"
-                alt="Supabase"
-                class="learning"
-              />
-              <img
-                src="assets/icons/docker.svg"
-                alt="Docker"
-                class="learning"
-              />
-              <img src="assets/icons/aws.svg" alt="AWS" class="learning" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contact_section" id="contact">
-        <div class="section_heading"><h2></h2></div>
-        <div class="section_subheading">
-          I'm always open to discussing new products, projects, or
-          opportunities. Let's connect!
-        </div>
-        <div class="contact_row">
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=pranavrishi8@gmail.com"
-            target="_blank"
-            class="card"
-          >
-            <img src="assets/icons/gmail.svg" alt="Gmail" />
-            <div class="Gmail">Gmail</div>
-          </a>
+.btn-main{background:white;color:#ff4d6d;font-weight:600;}
+.btn-yes{background:#ff4d6d;color:white;}
+.btn-no{
+  background:#888;color:white;
+  position:absolute;
+  left:60%;top:65%;
+  transition:left .25s, top .25s;
+}
 
-          <a href="https://wa.me/7667789173" target="_blank" class="card">
-            <img src="assets/icons/whatsapp.svg" alt="WhatsApp" />
-            <div class="WhatsApp">WhatsApp</div>
-          </a>
+.glow{box-shadow:0 0 20px #fff,0 0 40px #ff4d6d;}
 
-          <a
-            href="https://calendly.com/pranavrishi8"
-            target="_blank"
-            class="card"
-          >
-            <img src="assets/icons/calendly.svg" alt="Calendly" />
-            <div class="Calendly">Calendly</div>
-          </a>
+.confetti{
+  position:fixed;
+  width:8px;height:8px;
+  top:-10px;
+  animation:fall 3s linear forwards;
+}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);}}
 
-          <a
-            href="https://www.linkedin.com/in/pranavrishi8/"
-            target="_blank"
-            class="card"
-          >
-            <img src="assets/icons/linkedin.svg" alt="Linkedin" />
-            <div class="Linkedin">Linkedin</div>
-          </a>
-        </div>
-        <div class="work_row">
-          <a
-            href="https://github.com/shinchandler"
-            target="_blank"
-            class="card"
-          >
-            <img src="assets/icons/github.svg" alt="GitHub" />
-          </a>
-           <a
-            href="https://x.com/_shinchandler_"
-            target="_blank"
-            class="card"
-          >
-            <img src="assets/icons/x.svg" alt="Twitter" />
-          </a>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="quote">Made with keyboard chaos & coffee.</div>
-      <div class="copyright">
-        © <span id="year"></span> Pranav. All Rights Reserved.
-      </div>
-    </footer>
-    <script>
-      // Set current year automatically
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+.success{font-size:18px;line-height:1.6;}
+</style>
+</head>
+
+<body>
+
+<!-- STEP 1 -->
+<div class="card" id="step1">
+  <h2>Hi Chulbuli 💌</h2>
+  <p>Isse phle ki hum aage badhe...</p>
+  <input id="nameInput" placeholder="Apna naam bata">
+  <br>
+  <button class="btn-main" onclick="next()">Continue ✨</button>
+</div>
+
+<!-- STEP 2 -->
+<div class="card hidden" id="step2">
+  <h2 id="question"></h2>
+  <button class="btn-yes" id="yesBtn" onclick="yes()">Yes 💖</button>
+  <button class="btn-no" id="noBtn">Nah 🙈</button>
+</div>
+
+<!-- STEP 3 -->
+<div class="card hidden" id="step3">
+  <h2>Wuhooo 🥰</h2>
+
+  <p class="success" id="successMsg"></p>
+
+  <input id="addressInput" placeholder="Trust me, it will be fun 📍">
+  <br>
+  <button class="btn-main" onclick="submitAddress()">Send 💌</button>
+
+  <p id="finalMsg"></p>
+</div>
+
+<script>
+
+/* Floating hearts */
+setInterval(()=>{
+  const h=document.createElement("div");
+  h.className="heart";
+  h.innerHTML="❤️";
+  h.style.left=Math.random()*100+"vw";
+  h.style.fontSize=(15+Math.random()*25)+"px";
+  h.style.animationDuration=(4+Math.random()*4)+"s";
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),6000);
+},300);
+
+/* Steps */
+let name="";
+
+function next(){
+  name=nameInput.value.trim();
+  if(!name){alert("Naam to likh 😌");return;}
+  step1.classList.add("hidden");
+  step2.classList.remove("hidden");
+  question.innerText="Hi "+name+", Valentine's day par surprise bheju? 🌻";
+}
+
+/* YES */
+function yes(){
+  step2.classList.add("hidden");
+  step3.classList.remove("hidden");
+
+  successMsg.innerHTML=
+    `Kya baat hai ${name}, tu effort marke yha tak aai hai ❤️<br><br>
+     Drop your address below, will send you something soon 💞`;
+
+  confettiBlast();
+}
+
+/* CONFETTI */
+function confettiBlast(){
+  const end=Date.now()+5000;
+
+  const interval=setInterval(()=>{
+    for(let i=0;i<12;i++){
+      const c=document.createElement("div");
+      c.className="confetti";
+      c.style.left=Math.random()*100+"vw";
+      c.style.background=`hsl(${Math.random()*360},100%,50%)`;
+      c.style.animationDuration=(2+Math.random()*1.5)+"s";
+      document.body.appendChild(c);
+      setTimeout(()=>c.remove(),4000);
+    }
+
+    if(Date.now()>end) clearInterval(interval);
+  },120);
+}
+
+/* SEND TO GOOGLE FORM */
+function submitAddress(){
+  const addr=addressInput.value.trim();
+
+  if(!addr){
+    alert("Address to de do 😌");
+    return;
+  }
+
+  fetch("https://docs.google.com/forms/d/e/1FAIpQLSedeuKf6FASvpY2dInSNqzwHZudqChJsrL12bMrbG14lqKbiw/formResponse",{
+    method:"POST",
+    mode:"no-cors",
+    headers:{
+      "Content-Type":"application/x-www-form-urlencoded"
+    },
+    body:
+      "entry.579346394="+encodeURIComponent(name)+
+      "&entry.105735854="+encodeURIComponent(addr)
+  });
+
+  finalMsg.innerHTML="Done ❤️ Surprise coming soon 🎁";
+}
+
+/* NO BUTTON MAGIC */
+const noBtn=document.getElementById("noBtn");
+const yesBtn=document.getElementById("yesBtn");
+const card=document.getElementById("step2");
+
+const noTexts=["Pakka? 🥺","Sochle 😌","Pachtaegi 🙈","Aat kar 😭","Ha bolde 😏"];
+
+let textIndex=0,lastMove=0,yesScale=1;
+
+function growYes(){
+  if(yesScale<2){
+    yesScale+=0.15;
+    yesBtn.style.transform=`scale(${yesScale})`;
+    yesBtn.classList.add("glow");
+  }
+}
+
+function moveNo(){
+  const now=Date.now();
+  if(now-lastMove<350) return;
+  lastMove=now;
+
+  const x=Math.random()*(card.clientWidth-110);
+  const y=Math.random()*(card.clientHeight-70);
+
+  noBtn.style.left=x+"px";
+  noBtn.style.top=y+"px";
+  noBtn.innerText=noTexts[textIndex++%noTexts.length];
+
+  growYes();
+}
+
+card.addEventListener("mousemove",e=>{
+  const r=noBtn.getBoundingClientRect();
+  const d=Math.hypot(e.clientX-(r.left+r.width/2),e.clientY-(r.top+r.height/2));
+  if(d<80) moveNo();
+});
+
+noBtn.addEventListener("mouseenter",moveNo);
+noBtn.addEventListener("touchstart",moveNo);
+
+</script>
+</body>
 </html>
